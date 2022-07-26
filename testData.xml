@@ -1,0 +1,33 @@
+<TestGoogleApplication>
+
+    <gmailLoginID>testuser001</gmailLoginID>
+    <gmailLoginPW>testPW001</gmailLoginPW>
+    <chromepath>C://Users/00005860/Downloads/chromedriver_win32/chromedriver.exe</chromepath>
+    <techedApplicationURL>https://techedtrainings.com/</techedApplicationURL>
+    <applicationURL_cub>https://kubernetes.io/</applicationURL_cub>
+    <techedTitle>TechEd Trainings – IT Corporate Trainings</techedTitle>
+    <techedAddressText>Bangalore</techedAddressText>
+    <techedHeader>IT Corporate Trainings</techedHeader>
+    <techedContactText>+91 953 537 5027</techedContactText>
+    <imagePath>C://Users/00005860/Desktop/blue_circle_related_to_line_issue.png</imagePath>
+
+
+    <dockerURL>https://www.docker.com/</dockerURL>
+    <expectedDockerLink>Docker Verified Publisher</expectedDockerLink>
+    <expectedEmailPlaceHolder>Email Address</expectedEmailPlaceHolder>
+    <expectedErrorMessage>Must be valid email.&#xA;example@yourdomain.com</expectedErrorMessage>
+    <expectedDefaultCountry>Select Country</expectedDefaultCountry>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</TestGoogleApplication>
