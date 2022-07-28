@@ -1,61 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220725 13:00:07.892" rpa="false" schemaversion="3">
-<suite id="s1" name="Readpythoninrobot" source="C:\Users\00005860\Desktop\ROBOT_BATCH_2\testscripts\readpythoninrobot.robot">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220728 09:03:36.817" rpa="false" schemaversion="3">
+<suite id="s1" name="Scenario1To5 Duplicate" source="C:\Users\00005860\Desktop\ROBOT_BATCH_2\testscripts\scenario1to5_duplicate.robot">
 <kw name="readXML" type="SETUP">
 <kw name="Resd XML As Per Node" library="reusable">
-<var>${chrome_path}</var>
-<arg>chromepath</arg>
-<msg timestamp="20220725 13:00:08.551" level="INFO">${chrome_path} = C://Users/00005860/Downloads/chromedriver_win32/chromedriver.exe</msg>
-<status status="PASS" starttime="20220725 13:00:08.542" endtime="20220725 13:00:08.551"/>
+<var>${arisURL}</var>
+<arg>arisURL</arg>
+<msg timestamp="20220728 09:03:37.409" level="INFO">${arisURL} = https://www.arisglobal.com</msg>
+<status status="PASS" starttime="20220728 09:03:37.400" endtime="20220728 09:03:37.409"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
-<arg>${chrome_path}</arg>
+<arg>${arisURL}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20220725 13:00:08.552" level="INFO">${chrome_path} = C://Users/00005860/Downloads/chromedriver_win32/chromedriver.exe</msg>
-<status status="PASS" starttime="20220725 13:00:08.551" endtime="20220725 13:00:08.552"/>
+<msg timestamp="20220728 09:03:37.409" level="INFO">${arisURL} = https://www.arisglobal.com</msg>
+<status status="PASS" starttime="20220728 09:03:37.409" endtime="20220728 09:03:37.410"/>
 </kw>
 <kw name="Resd XML As Per Node" library="reusable">
-<var>${application_path}</var>
-<arg>applicationURL_cub</arg>
-<msg timestamp="20220725 13:00:08.554" level="INFO">${application_path} = https://kubernetes.io/</msg>
-<status status="PASS" starttime="20220725 13:00:08.552" endtime="20220725 13:00:08.554"/>
+<var>${expectedArisTitle2}</var>
+<arg>expectedArisTitle2</arg>
+<msg timestamp="20220728 09:03:37.411" level="INFO">${expectedArisTitle2} = Homepage | ArisGlobal</msg>
+<status status="PASS" starttime="20220728 09:03:37.410" endtime="20220728 09:03:37.411"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
-<arg>${application_path}</arg>
+<arg>${expectedArisTitle2}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20220725 13:00:08.555" level="INFO">${application_path} = https://kubernetes.io/</msg>
-<status status="PASS" starttime="20220725 13:00:08.555" endtime="20220725 13:00:08.555"/>
+<msg timestamp="20220728 09:03:37.412" level="INFO">${expectedArisTitle2} = Homepage | ArisGlobal</msg>
+<status status="PASS" starttime="20220728 09:03:37.411" endtime="20220728 09:03:37.412"/>
 </kw>
-<status status="PASS" starttime="20220725 13:00:08.541" endtime="20220725 13:00:08.556"/>
+<kw name="Resd XML As Per Node" library="reusable">
+<var>${expectedArisHeader}</var>
+<arg>expectedArisHeader</arg>
+<msg timestamp="20220728 09:03:37.413" level="INFO">${expectedArisHeader} = Delivering safer, faster breakthroughs</msg>
+<status status="PASS" starttime="20220728 09:03:37.412" endtime="20220728 09:03:37.413"/>
 </kw>
-<test id="s1-t1" name="TC_01" line="16">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${application_path}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220725 13:00:08.559" level="INFO">Opening browser 'chrome' to base url 'https://kubernetes.io/'.</msg>
-<status status="PASS" starttime="20220725 13:00:08.559" endtime="20220725 13:00:13.203"/>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${expectedArisHeader}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20220728 09:03:37.414" level="INFO">${expectedArisHeader} = Delivering safer, faster breakthroughs</msg>
+<status status="PASS" starttime="20220728 09:03:37.414" endtime="20220728 09:03:37.414"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220725 13:00:13.204" endtime="20220725 13:00:13.333"/>
+<kw name="Resd XML As Per Node" library="reusable">
+<var>${expectedOption1}</var>
+<arg>expectedOption1</arg>
+<msg timestamp="20220728 09:03:37.416" level="FAIL">IndexError: list index out of range</msg>
+<status status="FAIL" starttime="20220728 09:03:37.415" endtime="20220728 09:03:37.418"/>
 </kw>
-<status status="PASS" starttime="20220725 13:00:08.556" endtime="20220725 13:00:13.335"/>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${expectedOption1}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220728 09:03:37.419" endtime="20220728 09:03:37.419"/>
+</kw>
+<status status="FAIL" starttime="20220728 09:03:37.400" endtime="20220728 09:03:37.419"/>
+</kw>
+<test id="s1-t1" name="Test Case 2" line="29">
+<tag>Scenario_2</tag>
+<status status="FAIL" starttime="20220728 09:03:37.420" endtime="20220728 09:03:37.422">Parent suite setup failed:
+IndexError: list index out of range</status>
 </test>
-<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<kw name="CloseMyWebsite" library="test_reusable" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220725 13:00:13.338" endtime="20220725 13:00:15.612"/>
+<status status="PASS" starttime="20220728 09:03:37.424" endtime="20220728 09:03:37.425"/>
 </kw>
-<status status="PASS" starttime="20220725 13:00:07.901" endtime="20220725 13:00:15.612"/>
+<status status="PASS" starttime="20220728 09:03:37.424" endtime="20220728 09:03:37.425"/>
+</kw>
+<status status="FAIL" starttime="20220728 09:03:36.822" endtime="20220728 09:03:37.425">Suite setup failed:
+IndexError: list index out of range</status>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">Scenario_2</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Readpythoninrobot">Readpythoninrobot</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Scenario1To5 Duplicate">Scenario1To5 Duplicate</stat>
 </suite>
 </statistics>
 <errors>

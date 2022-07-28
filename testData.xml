@@ -18,6 +18,14 @@
     <expectedErrorMessage>Must be valid email.&#xA;example@yourdomain.com</expectedErrorMessage>
     <expectedDefaultCountry>Select Country</expectedDefaultCountry>
 
+    <arisURL>https://www.arisglobal.com</arisURL>
+    <expectedArisTitle1>(1) New Messages!</expectedArisTitle1>
+    <expectedArisTitle2>Homepage | ArisGlobal</expectedArisTitle2>
+    <expectedArisHeader>Delivering safer, faster breakthroughs</expectedArisHeader>
+    <expectedOption2>Who We Are</expectedOption2>
+    <expectedOption3>Our Customers</expectedOption3>
+    <expectedOption4>News</expectedOption4>
+    <expectedWatchVideoBtn>Watch the video</expectedWatchVideoBtn>
 
 
 
